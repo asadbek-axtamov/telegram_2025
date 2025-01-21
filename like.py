@@ -1,7 +1,6 @@
-import os
-from telegram.ext import CommandHandler, Updater,MessageHandler
+from telegram.ext import CommandHandler, Updater, MessageHandler
 from telegram import Update
-
+import os
 TOKEN = os.environ['TOKEN']
 update_vote={"👍":0,"👎":0}
 def like(update, context):
